@@ -1,42 +1,147 @@
+body{
+  background-color: white;
+}
 #root {
   max-width: 1280px;
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
+  border-radius: 80px;
+}
+:root{
+  --border-radius: 80px;
+  --left-rightcolor: #D0EFD3;
+}
+.calculatorbody{
+  display: flex;
+  max-width: 100%;
+  height: 500px;
+  box-shadow: 5px 10px 15px;
+  border-top-right-radius: var(--border-radius);
+  border-bottom-right-radius: var(--border-radius);
+  border-top-left-radius: var(--border-radius);
+  border-bottom-left-radius: var(--border-radius);
+}
+.leftcontrol{
+  width: 754px;
+ 
+  border-top-left-radius: var(--border-radius);
+  border-bottom-left-radius: var(--border-radius);
+  align-items: center;
+  display: flex;
+  justify-content: space-around;
+}
+.centercontrol{
+  width: 862px;
+}
+.rightcontrol{
+  width: 754px;
+  border-bottom-right-radius: var(--border-radius);
+  border-top-right-radius: var(--border-radius);
+  
+
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
+.Basicsoperations{
+  display: grid;
+  max-width: 100%;
+  grid-template-columns: 50% 50%;
+  gap: 10px;
+  transform: rotate(45deg);
+  margin: 20px;
 }
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
+.Basicsoperations button{
+  border-radius: 50%;
+  width: 90px;
+  height: 90px;
+  transform: rotate(-45deg);
+  font-size: 60px;
+  padding: 0px;
+  padding-bottom: 10px;
+  transition: 0.5s all ease-in-out;
 }
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.clear{
+  background-color: #E4BAA8;
+  color: black;
+  transition: 0.5s all ease-in-out;
+}
+.clear:hover{
+  background-color: #C3D2C9;
+  transition: 0.5s all ease-in-out;
+}
+.delete{
+  background-color: #7AE2C9;
+  color: black;
+  transition: 0.5s all ease-in-out;
+}
+.delete:hover{
+  background-color: #7AE2C9;
+  transition: 0.5s all ease-in-out;
+}
+.Basicsoperations button:hover{
+  transition: 0.5s all ease-in-out;
+  background-color: #C3D2C9;
+}
+.specialsbuttons{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.equalbutton{
+  height: 290px;
+  font-size: 20px;
+  color: #33E36F;
+  font-size: 30px;
+  transition: 0.5s all ease-in-out;
+}
+.equalbutton:hover{
+  transition: 0.5s all ease-in-out;
+  background-color: #C3D2C9;
+}
+.circle{
+  border-radius: 40px;
+  height: 80px;
+  width: 80px;
+  text-align: center;
+  font-size: 20px;
+  padding: 0px;
+  margin: auto;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.Number{
+  display: grid;
+  grid-template-columns: auto auto auto;
+  max-width: 300px;
+  margin: auto;
+  gap: 30px;
+  height: 400px;
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.Number button{
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  font-size: 30px;
+  color: black;
+  padding: 0px;
+  transition: 0.5s all ease-in-out;
 }
-
-.card {
-  padding: 2em;
+.Number button:hover{
+  background-color:#C3D2C9 ;
+  transition: 0.5s all ease-in-out;
 }
-
-.read-the-docs {
-  color: #888;
+.firstcolum{
+  background-color: #E4BAA8;
+}
+.secondcolum{
+  background-color: #7AE2C9;
+}
+.thirdcolum{
+  background-color: #BBBAE0;
+}
+.Number .zero{
+  grid-column: 1/3;
+  border-radius: 10px;
+  width: 200px;
 }
