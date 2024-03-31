@@ -1,68 +1,42 @@
-:root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
-
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+  border-radius: 80px;
 }
-
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
+/*Main Layout Part*/
+h1{
+  font-size: 40px;
+  font-family: Arial, Helvetica, sans-serif;
 }
-a:hover {
-  color: #535bf2;
+:root{
+  --border-radius: 80px;
+  --left-rightcolor: #D0EFD3;
 }
-
-body {
-  margin: 0;
+.calculatorbody{
   display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
+  max-width: 100%;
+  height: 500px;
+  box-shadow: 5px 5px 5px grey;
+  border-top-right-radius: var(--border-radius);
+  border-bottom-right-radius: var(--border-radius);
+  border-top-left-radius: var(--border-radius);
+  border-bottom-left-radius: var(--border-radius);
 }
-
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
+.leftcontrol{
+  width: 754px;
+  background-color: var(--left-rightcolor);
+  border-top-left-radius: var(--border-radius);
+  border-bottom-left-radius: var(--border-radius);
 }
-
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
+.centercontrol{
+  width: 862px;
+  background-color: #C3D2C9;
 }
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
-}
-
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
+.rightcontrol{
+  width: 754px;
+  background-color: var(--left-rightcolor);
+  border-bottom-right-radius: var(--border-radius);
+  border-top-right-radius: var(--border-radius);
 }
