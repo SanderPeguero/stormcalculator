@@ -33,6 +33,7 @@ h1{
 .centercontrol{
   width: 862px;
   background-color: #C3D2C9;
+  align-items: center;
 }
 .rightcontrol{
   width: 754px;
