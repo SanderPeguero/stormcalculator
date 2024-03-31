@@ -1,7 +1,7 @@
 
 import './App.css'
-import LeftButtons from './components/Calculator/UI/LeftButtons/RightButtons'
-import RightButtons from './components/Calculator/UI/RightButtons/LeftButtons'
+import LeftButtons from './components/Calculator/UI/RightButton/RightButtons'
+import RightButtons from './components/Calculator/UI/LeftButton/LeftButtons'
 import CenterControls from './components/Calculator/UI/CenterControl/CenterControls'
 function App() {
 
